@@ -1,17 +1,17 @@
-Teste
-CONTELE
+# CONTELE
 Desenvolvido por Hernani Amancio de Almeida
 
-Executar projeto
+## Executar projeto
+
 Para executar o projeto, sera necessario instalar os seguintes programas em seu computador:
 
-Nodejs
-Docker
-Docker Compose
-Postbird
-yarn
-Desenvolvimento
-Para iniciar o desenvolvimento e necessario clonar o projeto do Github num diretorio de sua preferencia com os seguintes comandos:
+ - Nodejs
+ - Docker
+ - Docker Compose
+ - Postbird
+ - yarn
+
+Para iniciar o projeto e necessario clonar o projeto do Github num diretorio de sua preferencia com os seguintes comandos:
 
 cd "diretorio de sua preferencia"
 git clone https://github.com/2020nani/testeContele.git
@@ -30,3 +30,19 @@ Agora e necessario criar o container do front para isso de o comando cd ../front
 Dentro desta pasta no terminal de o comando docker-compose up -d
 
 Feito isso voce pode acessar a front em seu computador no endereco http://localhost:3000 e nosso projeto estara rodando dentro dos container docker
+
+## Desenvolvimento
+
+Para iniciar o desenvolvimento e necessario rodar os seguintes comandos dentro da pasta raiz de cada projeto (serverContele, frontContele):
+
+- `npm install` ou `yarn` caso tenha yarn instalado em sua maquina
+
+Rode a api em seu computador na porta 3333 sem utilizar o docker com o seguinte comando dentro da pasta serverContele
+
+- `npm run dev` ou
+- `yarn dev`
+
+Rode o  front em seu computador na porta 3000 sem utilizar o docker com o seguinte comando dentro da pasta frontContele
+
+- `npm run start` ou
+- `yarn start`
